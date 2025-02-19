@@ -1,30 +1,44 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'home_screen.dart'; // Import the HomeScreen
+import 'home.dart';
+import 'schools.dart';
+import 'home_sports.dart';
+import 'table.dart';
+import 'scenarios.dart';
+import 'matches.dart';
 
 void main() {
-  runApp(const SportsTournamentApp());
+  runApp(MyApp());
 }
 
-class SportsTournamentApp extends StatelessWidget {
-  const SportsTournamentApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BIS BIG GAMES',
+      title: 'BIS Big Games',
       theme: ThemeData(
-        primaryColor: const Color(0xFF1A2141), // Blue
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.blue, // Base color for the scheme
-        ).copyWith(
-          secondary: const Color(0xFFE30613), // Gold
-        ),
-        textTheme: GoogleFonts.montserratTextTheme(
-          Theme.of(context).textTheme,
-        ),
+        primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(), // Set the home screen
+      initialRoute: '/home',
+      routes: {
+        '/home': (context) => HomeScreen(),
+        '/schools': (context) => SchoolsScreen(),
+        '/sports': (context) => HomeSports(),
+        '/table': (context) => TableScreen(),
+        '/scenarios': (context) => ScenariosScreen(),
+        // Add routes for the sports links
+        '/futbol_masculino_mayores': (context) => MatchesScreen(),
+        '/futbol_masculino_juvenil': (context) => MatchesScreen(),
+        '/basketball_masculino_mayores': (context) => MatchesScreen(),
+        '/basketball_masculino_juvenil': (context) => MatchesScreen(),
+        '/voleibol_femenino_mayores': (context) => MatchesScreen(),
+        '/voleibol_femenino_juvenil': (context) => MatchesScreen(),
+        '/gimnasia_juvenil': (context) => MatchesScreen(),
+        '/ajedrez': (context) => MatchesScreen(),
+        '/tenis': (context) => MatchesScreen(),
+        '/hipica': (context) => MatchesScreen(),
+      },
     );
   }
 }
