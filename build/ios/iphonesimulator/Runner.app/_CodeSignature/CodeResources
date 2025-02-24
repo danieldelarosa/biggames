@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		tCS1uEbbhj85AnMTFtWKjhL3Il8=
+		iCBOO8e0If5LV7Oc3ZeQ9TKQJb0=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		bF9JcBbx2GXBPkd9/vAVwGY2xdQ=
+		aDq31y3ijJQo+D8ebEEZcmir3vw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		hsMcCmKF2VFJangKkO70asUEuPM=
+		t/j0wtfRzmFj/ifZbTGOcgNnu2Q=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		nFoNq+F/R59sHysUmpPbZk6vqPs=
+		sEUsxNwK94Kal0DTdywLGpFlqec=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES.Z</key>
 		<data>
-		LFYZ4tdysdcINmpVWDsWXwzwUt4=
+		xQ4GQM8g7KGwiS0WVKuxKW3rr/c=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NativeAssetsManifest.json</key>
 		<data>
@@ -140,13 +140,25 @@
 		<data>
 		D1g88DV/NE+j8FhRnjiV4ETHJYo=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/CAUJARAL.png</key>
+		<data>
+		uN9TCSS4sf9SiU06anT9l/SQ3iY=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/CAUJARAL.svg</key>
 		<data>
 		cOqx00dWLWm+425Cr4Qj+G061zE=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/HOTEL.png</key>
+		<data>
+		Jo0mi+qYebRM/qtc0knOnif+DUM=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/HOTEL.svg</key>
 		<data>
 		mOkxkiXKMh6sdN2dgeV7oBaCh+w=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/INTERFILMS.png</key>
+		<data>
+		ixvh9qxd9EaGtddL3Ih3/ZlZZ+0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/INTERFILMS.svg</key>
 		<data>
@@ -162,7 +174,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		AQ3n8FAB+HoADZ9/LwcOK5Z2t6U=
+		ojI0N3wNlTKj+NiD8fQobqFVETY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css</key>
 		<data>
@@ -469,7 +481,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IcITwwgo7DT1BhHS72O/SeAa+0xqI1x+fqLZ9v7jAbI=
+			fnakpx8LoBESWU5FQbNjWyHsgitC5+2TQt+lGRQZ/28=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -483,21 +495,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2p3CewhrQI1PksWwdZgNBH3D3KJT4HtHb6WzhmWELSU=
+			inLeO5w/o/rmxGSbyXav7UfmDr5+b/uLFLaVqkiTmdQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P0qaHMA7z1/CAy021Jn9RKpyvv59dq8eubK5Pdq3JHo=
+			zCMA9dzJvb2ZbPIeAe2Gy5lfleALOVkfjW5QrL7fK50=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Snf1rEonztnrYpzi7tNCI/jq2Pijxk6YnNmBTQshnhc=
+			uLlmrTitkRd5Xsmktz4A9VhaTLCw93NYc/GG2CanahE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -511,7 +523,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pax7iENNkyfLdzZQOStBLSczIuTEyXdyxDJ4OQehTiU=
+			eXeN8myyjG0yj0spYd1xMKGkvg0YC4KGS2sO1sWQ3D4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/NativeAssetsManifest.json</key>
@@ -633,6 +645,13 @@
 			P21BXrsWXFehqFFZaN3bqKVWYc6P1ji6n8b/2bzrTXE=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/CAUJARAL.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Cb//AwiiSXRcO5NB5kadiuWbES5DA5NgaAewzoBls1k=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/CAUJARAL.svg</key>
 		<dict>
 			<key>hash2</key>
@@ -640,11 +659,25 @@
 			R4gib3xWJoBoHW1ToIw7BBmhzBiYsVZw8Z4wQ6w1aEk=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/HOTEL.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hpfy88Xg00v6VkJqF3057+63mT3hULj8L9KgXjKiWcU=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/HOTEL.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			VuBP8DFPsacSZZjyIAOiiOE056vjtFDssLssD9sxuxY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/INTERFILMS.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wOOWGafvB8dke0zE1/UNVoRv9srRwUxKDQ0fTpgT7i8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/sponsors/INTERFILMS.svg</key>
@@ -672,7 +705,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2lhNsNmXd3swyS/1MGogVpnOfHkX4cZS/p6NEoamoDQ=
+			WFDQDx3Kn7xF9eg7ELxzGdl3Wy0I3L12Unu/vX2lViY=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css</key>

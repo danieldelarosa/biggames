@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		hsMcCmKF2VFJangKkO70asUEuPM=
+		t/j0wtfRzmFj/ifZbTGOcgNnu2Q=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		nFoNq+F/R59sHysUmpPbZk6vqPs=
+		sEUsxNwK94Kal0DTdywLGpFlqec=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		LFYZ4tdysdcINmpVWDsWXwzwUt4=
+		xQ4GQM8g7KGwiS0WVKuxKW3rr/c=
 		</data>
 		<key>flutter_assets/NativeAssetsManifest.json</key>
 		<data>
@@ -96,29 +96,29 @@
 		<data>
 		D1g88DV/NE+j8FhRnjiV4ETHJYo=
 		</data>
+		<key>flutter_assets/assets/sponsors/CAUJARAL.png</key>
+		<data>
+		uN9TCSS4sf9SiU06anT9l/SQ3iY=
+		</data>
 		<key>flutter_assets/assets/sponsors/CAUJARAL.svg</key>
 		<data>
 		cOqx00dWLWm+425Cr4Qj+G061zE=
+		</data>
+		<key>flutter_assets/assets/sponsors/HOTEL.png</key>
+		<data>
+		Jo0mi+qYebRM/qtc0knOnif+DUM=
 		</data>
 		<key>flutter_assets/assets/sponsors/HOTEL.svg</key>
 		<data>
 		mOkxkiXKMh6sdN2dgeV7oBaCh+w=
 		</data>
+		<key>flutter_assets/assets/sponsors/INTERFILMS.png</key>
+		<data>
+		ixvh9qxd9EaGtddL3Ih3/ZlZZ+0=
+		</data>
 		<key>flutter_assets/assets/sponsors/INTERFILMS.svg</key>
 		<data>
 		8UnipImeCla4dS4FtR1l3NP1g/4=
-		</data>
-		<key>flutter_assets/assets/sponsors/sponsor1.png</key>
-		<data>
-		bh41OAH0yYsJggzUb9N2GGOgdPw=
-		</data>
-		<key>flutter_assets/assets/sponsors/sponsor2.png</key>
-		<data>
-		0lcEFfpWvYdrgLI7XkCybsp341g=
-		</data>
-		<key>flutter_assets/assets/sponsors/sponsor3.png</key>
-		<data>
-		h4dtSZBP4hFpzoKR5ZXtuIpHyRo=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		AQ3n8FAB+HoADZ9/LwcOK5Z2t6U=
+		ojI0N3wNlTKj+NiD8fQobqFVETY=
 		</data>
 		<key>flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css</key>
 		<data>
@@ -163,14 +163,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P0qaHMA7z1/CAy021Jn9RKpyvv59dq8eubK5Pdq3JHo=
+			zCMA9dzJvb2ZbPIeAe2Gy5lfleALOVkfjW5QrL7fK50=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Snf1rEonztnrYpzi7tNCI/jq2Pijxk6YnNmBTQshnhc=
+			uLlmrTitkRd5Xsmktz4A9VhaTLCw93NYc/GG2CanahE=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -184,7 +184,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pax7iENNkyfLdzZQOStBLSczIuTEyXdyxDJ4OQehTiU=
+			eXeN8myyjG0yj0spYd1xMKGkvg0YC4KGS2sO1sWQ3D4=
 			</data>
 		</dict>
 		<key>flutter_assets/NativeAssetsManifest.json</key>
@@ -306,11 +306,25 @@
 			P21BXrsWXFehqFFZaN3bqKVWYc6P1ji6n8b/2bzrTXE=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/sponsors/CAUJARAL.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Cb//AwiiSXRcO5NB5kadiuWbES5DA5NgaAewzoBls1k=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/sponsors/CAUJARAL.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			R4gib3xWJoBoHW1ToIw7BBmhzBiYsVZw8Z4wQ6w1aEk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/sponsors/HOTEL.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hpfy88Xg00v6VkJqF3057+63mT3hULj8L9KgXjKiWcU=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/sponsors/HOTEL.svg</key>
@@ -320,32 +334,18 @@
 			VuBP8DFPsacSZZjyIAOiiOE056vjtFDssLssD9sxuxY=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/sponsors/INTERFILMS.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wOOWGafvB8dke0zE1/UNVoRv9srRwUxKDQ0fTpgT7i8=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/sponsors/INTERFILMS.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			512aceJj6o/HlDwahga7IZUQzTYns/kDhNzKvw1CtIY=
-			</data>
-		</dict>
-		<key>flutter_assets/assets/sponsors/sponsor1.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/JZQPG5HWt8WwZvSlNywusuu9rPAzxA2SIj5WZ+9ZUg=
-			</data>
-		</dict>
-		<key>flutter_assets/assets/sponsors/sponsor2.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mSCmCyC3u1ELCiCWi48Nh0M3Zm+UXoRRJ5BbNqh4Xmo=
-			</data>
-		</dict>
-		<key>flutter_assets/assets/sponsors/sponsor3.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			B0iFuNP/sfGvkmzoNNJcWj/wFaoWSbfNhF8xraIZDng=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -366,7 +366,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2lhNsNmXd3swyS/1MGogVpnOfHkX4cZS/p6NEoamoDQ=
+			WFDQDx3Kn7xF9eg7ELxzGdl3Wy0I3L12Unu/vX2lViY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css</key>
