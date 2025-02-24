@@ -11,10 +11,16 @@ class HomeSports extends StatefulWidget {
 }
 
 class _HomeSportsState extends State<HomeSports> {
-  int _selectedIndex = 2; // Track the selected tab, default to "Sports"
+  final int _selectedIndex = 2; // Track the selected tab, default to "Sports"
 
   // List of tabs
-  final List<String> _tabs = ['Home', 'Schools', 'Sports', 'Table', 'Scenarios'];
+  final List<String> _tabs = [
+    'Home',
+    'Schools',
+    'Sports',
+    'Table',
+    'Scenarios',
+  ];
 
   // List of sports
   final List<Map<String, String>> sports = const [
@@ -32,7 +38,9 @@ class _HomeSportsState extends State<HomeSports> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF1A2141), // Set app bar background color
+        backgroundColor: const Color(
+          0xFF1A2141,
+        ), // Set app bar background color
       ),
       body: Column(
         children: [
@@ -40,24 +48,28 @@ class _HomeSportsState extends State<HomeSports> {
           Container(
             color: const Color(0xFF1A2141), // Blue background
             child: Row(
-              children: _tabs.map((tab) {
-                int index = _tabs.indexOf(tab);
-                return Expanded(
-                  child: Container(
-                    color: _selectedIndex == index ? const Color(0xFFE30613) : Colors.transparent,
-                    child: TextButton(
-                      onPressed: () => onItemTapped(context, index),
-                      child: Text(
-                        tab,
-                        style: GoogleFonts.montserrat(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+              children:
+                  _tabs.map((tab) {
+                    int index = _tabs.indexOf(tab);
+                    return Expanded(
+                      child: Container(
+                        color:
+                            _selectedIndex == index
+                                ? const Color(0xFFE30613)
+                                : Colors.transparent,
+                        child: TextButton(
+                          onPressed: () => onItemTapped(context, index),
+                          child: Text(
+                            tab,
+                            style: GoogleFonts.montserrat(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                );
-              }).toList(),
+                    );
+                  }).toList(),
             ),
           ),
           // Title "Sports"

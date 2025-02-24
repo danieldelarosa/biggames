@@ -14,20 +14,23 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   late YoutubePlayerController _controller;
-  int _selectedIndex = 0; // Track the selected tab, default to "Home"
+  final int _selectedIndex = 0; // Track the selected tab, default to "Home"
 
   // List of tabs
-  final List<String> _tabs = ['Home', 'Schools', 'Sports', 'Table', 'Scenarios'];
+  final List<String> _tabs = [
+    'Home',
+    'Schools',
+    'Sports',
+    'Table',
+    'Scenarios',
+  ];
 
   @override
   void initState() {
     super.initState();
     _controller = YoutubePlayerController(
       initialVideoId: '8T5YWANH4OE', // YouTube video ID
-      flags: const YoutubePlayerFlags(
-        autoPlay: true,
-        mute: false,
-      ),
+      flags: const YoutubePlayerFlags(autoPlay: true, mute: false),
     );
   }
 
@@ -49,7 +52,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF1A2141), // Set app bar background color
+        backgroundColor: const Color(
+          0xFF1A2141,
+        ), // Set app bar background color
       ),
       body: Column(
         children: [
@@ -57,31 +62,36 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             color: const Color(0xFF1A2141), // Blue background
             child: Row(
-              children: _tabs.map((tab) {
-                int index = _tabs.indexOf(tab);
-                return Expanded(
-                  child: Container(
-                    color: _selectedIndex == index ? const Color(0xFFE30613) : Colors.transparent,
-                    child: TextButton(
-                      onPressed: () => onItemTapped(context, index),
-                      child: Text(
-                        tab,
-                        style: GoogleFonts.montserrat(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+              children:
+                  _tabs.map((tab) {
+                    int index = _tabs.indexOf(tab);
+                    return Expanded(
+                      child: Container(
+                        color:
+                            _selectedIndex == index
+                                ? const Color(0xFFE30613)
+                                : Colors.transparent,
+                        child: TextButton(
+                          onPressed: () => onItemTapped(context, index),
+                          child: Text(
+                            tab,
+                            style: GoogleFonts.montserrat(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                );
-              }).toList(),
+                    );
+                  }).toList(),
             ),
           ),
           // Image Section with Link to YouTube Video
           GestureDetector(
-            onTap: () => _launchURL('https://www.youtube.com/watch?v=8T5YWANH4OE'),
+            onTap:
+                () => _launchURL('https://www.youtube.com/watch?v=8T5YWANH4OE'),
             child: Image.asset(
-              'assets/images/youtube_thumbnail.png', 
+              'assets/images/youtube_thumbnail.png',
               height: 200, // Reduce the size of the thumbnail
               fit: BoxFit.cover,
             ),
@@ -91,10 +101,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.all(16.0),
             child: Row(
               children: [
-                Image.asset(
-                  'assets/images/logo.png',
-                  height: 100,
-                ),
+                Image.asset('assets/images/logo.png', height: 100),
                 const SizedBox(width: 16),
                 Expanded(
                   child: Column(
@@ -126,16 +133,6 @@ class _HomeScreenState extends State<HomeScreen> {
           const Spacer(),
           // Carousel Footer
           const SponsorCarousel(),
-          // BIS Logo at the Bottom
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Center(
-              child: Image.asset(
-                'assets/images/bis_logo.png', // Ensure you have this image in your assets
-                height: 100,
-              ),
-            ),
-          ),
         ],
       ),
     );

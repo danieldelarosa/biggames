@@ -12,10 +12,16 @@ class SchoolsScreen extends StatefulWidget {
 }
 
 class _SchoolsScreenState extends State<SchoolsScreen> {
-  int _selectedIndex = 1; // Track the selected tab, default to "Schools"
+  final int _selectedIndex = 1; // Track the selected tab, default to "Schools"
 
   // List of tabs
-  final List<String> _tabs = ['Home', 'Schools', 'Sports', 'Table', 'Scenarios'];
+  final List<String> _tabs = [
+    'Home',
+    'Schools',
+    'Sports',
+    'Table',
+    'Scenarios',
+  ];
 
   void _launchURL(String url) async {
     if (await canLaunch(url)) {
@@ -29,7 +35,9 @@ class _SchoolsScreenState extends State<SchoolsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF1A2141), // Set app bar background color
+        backgroundColor: const Color(
+          0xFF1A2141,
+        ), // Set app bar background color
       ),
       body: Column(
         children: [
@@ -37,24 +45,28 @@ class _SchoolsScreenState extends State<SchoolsScreen> {
           Container(
             color: const Color(0xFF1A2141), // Blue background
             child: Row(
-              children: _tabs.map((tab) {
-                int index = _tabs.indexOf(tab);
-                return Expanded(
-                  child: Container(
-                    color: _selectedIndex == index ? const Color(0xFFE30613) : Colors.transparent,
-                    child: TextButton(
-                      onPressed: () => onItemTapped(context, index),
-                      child: Text(
-                        tab,
-                        style: GoogleFonts.montserrat(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+              children:
+                  _tabs.map((tab) {
+                    int index = _tabs.indexOf(tab);
+                    return Expanded(
+                      child: Container(
+                        color:
+                            _selectedIndex == index
+                                ? const Color(0xFFE30613)
+                                : Colors.transparent,
+                        child: TextButton(
+                          onPressed: () => onItemTapped(context, index),
+                          child: Text(
+                            tab,
+                            style: GoogleFonts.montserrat(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                );
-              }).toList(),
+                    );
+                  }).toList(),
             ),
           ),
           // BIS Logo and Visit Us Section
@@ -100,12 +112,36 @@ class _SchoolsScreenState extends State<SchoolsScreen> {
                   ),
                 ),
                 const SizedBox(height: 8),
-                _buildLink(context, 'Futbol Masculino Mayores', '/futbol_masculino_mayores'),
-                _buildLink(context, 'Futbol Masculino Juvenil', '/futbol_masculino_juvenil'),
-                _buildLink(context, 'Basketball Masculino Mayores', '/basketball_masculino_mayores'),
-                _buildLink(context, 'Basketball Masculino Juvenil', '/basketball_masculino_juvenil'),
-                _buildLink(context, 'Voleibol Femenino Mayores', '/voleibol_femenino_mayores'),
-                _buildLink(context, 'Voleibol Femenino Juvenil', '/voleibol_femenino_juvenil'),
+                _buildLink(
+                  context,
+                  'Futbol Masculino Mayores',
+                  '/futbol_masculino_mayores',
+                ),
+                _buildLink(
+                  context,
+                  'Futbol Masculino Juvenil',
+                  '/futbol_masculino_juvenil',
+                ),
+                _buildLink(
+                  context,
+                  'Basketball Masculino Mayores',
+                  '/basketball_masculino_mayores',
+                ),
+                _buildLink(
+                  context,
+                  'Basketball Masculino Juvenil',
+                  '/basketball_masculino_juvenil',
+                ),
+                _buildLink(
+                  context,
+                  'Voleibol Femenino Mayores',
+                  '/voleibol_femenino_mayores',
+                ),
+                _buildLink(
+                  context,
+                  'Voleibol Femenino Juvenil',
+                  '/voleibol_femenino_juvenil',
+                ),
                 _buildLink(context, 'Gimnasia Juvenil', '/gimnasia_juvenil'),
                 _buildLink(context, 'Ajedrez', '/ajedrez'),
                 _buildLink(context, 'Tenis', '/tenis'),

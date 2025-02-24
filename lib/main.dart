@@ -5,6 +5,7 @@ import 'home_sports.dart';
 import 'table.dart';
 import 'scenarios.dart';
 import 'matches.dart';
+import 'splash_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,11 +18,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'BIS Big Games',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      initialRoute: '/home',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      initialRoute: '/SplashPage()',
       routes: {
+        '/': (context) => SplashPage(),
         '/home': (context) => HomeScreen(),
         '/schools': (context) => SchoolsScreen(),
         '/sports': (context) => HomeSports(),
