@@ -6,16 +6,13 @@ void onItemTapped(BuildContext context, int index) {
       Navigator.pushReplacementNamed(context, '/home');
       break;
     case 1:
-      Navigator.pushReplacementNamed(context, '/schools');
-      break;
-    case 2:
       Navigator.pushReplacementNamed(context, '/sports');
       break;
-    case 3:
+    case 2:
       Navigator.pushReplacementNamed(context, '/table');
       break;
-    case 4:
-      Navigator.pushReplacementNamed(context, '/scenarios');
+    case 3:
+      Navigator.pushReplacementNamed(context, '/schedule');
       break;
   }
 }

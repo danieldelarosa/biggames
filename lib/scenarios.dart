@@ -11,17 +11,10 @@ class ScenariosScreen extends StatefulWidget {
 }
 
 class _ScenariosScreenState extends State<ScenariosScreen> {
-  final int _selectedIndex =
-      4; // Track the selected tab, default to "Scenarios"
+  int _selectedIndex = 4; // Track the selected tab, default to "Scenarios"
 
   // List of tabs
-  final List<String> _tabs = [
-    'Home',
-    'Schools',
-    'Sports',
-    'Table',
-    'Scenarios',
-  ];
+  final List<String> _tabs = ['Home', 'Sports', 'Table', 'Scenarios'];
 
   // List of scenarios
   final List<Map<String, String>> scenarios = const [
@@ -47,56 +40,82 @@ class _ScenariosScreenState extends State<ScenariosScreen> {
         ), // Set app bar background color
         title: Text('Scenarios', style: TextStyle(color: Colors.white)),
       ),
-      body: Column(
+      body: Stack(
         children: [
-          // Top Navigation Bar
-          Container(
-            color: const Color(0xFF1A2141), // Blue background
-            child: Row(
-              children:
-                  _tabs.map((tab) {
-                    int index = _tabs.indexOf(tab);
-                    return Expanded(
-                      child: Container(
-                        color:
-                            _selectedIndex == index
-                                ? const Color(0xFFE30613)
-                                : Colors.transparent,
-                        child: TextButton(
-                          onPressed: () => onItemTapped(context, index),
-                          child: Text(
-                            tab,
-                            style: GoogleFonts.montserrat(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+          Column(
+            children: [
+              // Top Navigation Bar
+              Container(
+                color: const Color(0xFF1A2141), // Blue background
+                child: Row(
+                  children:
+                      _tabs.map((tab) {
+                        int index = _tabs.indexOf(tab);
+                        return Expanded(
+                          child: Container(
+                            color:
+                                _selectedIndex == index
+                                    ? const Color(0xFFE30613)
+                                    : Colors.transparent,
+                            child: TextButton(
+                              onPressed: () => onItemTapped(context, index),
+                              child: Text(
+                                tab,
+                                style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ),
-                        ),
-                      ),
-                    );
-                  }).toList(),
-            ),
-          ),
-          // Grid of Scenarios
-          Expanded(
-            child: GridView.builder(
-              padding: const EdgeInsets.all(16),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                crossAxisSpacing: 16,
-                mainAxisSpacing: 16,
+                        );
+                      }).toList(),
+                ),
               ),
-              itemCount: scenarios.length,
-              itemBuilder: (context, index) {
-                return ScenarioTile(
-                  name: scenarios[index]['name']!,
-                  image: scenarios[index]['image']!,
-                );
-              },
+              // Grid of Scenarios
+              Expanded(
+                child: GridView.builder(
+                  padding: const EdgeInsets.all(16),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    crossAxisSpacing: 16,
+                    mainAxisSpacing: 16,
+                  ),
+                  itemCount: scenarios.length,
+                  itemBuilder: (context, index) {
+                    return ScenarioTile(
+                      name: scenarios[index]['name']!,
+                      image: scenarios[index]['image']!,
+                    );
+                  },
+                ),
+              ),
+              // Carousel Footer
+              const SponsorCarousel(),
+            ],
+          ),
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              color: Colors.red,
+              padding: const EdgeInsets.symmetric(
+                vertical: 4.0,
+                horizontal: 8.0,
+              ),
+              child: Center(
+                child: Text(
+                  'This is a beta version',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 12,
+                  ),
+                ),
+              ),
             ),
           ),
-          // Carousel Footer
-          const SponsorCarousel(),
         ],
       ),
     );

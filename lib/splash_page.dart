@@ -3,7 +3,7 @@ import 'home.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {
-  SplashPage({Key? key}) : super(key: key);
+  const SplashPage({super.key});
 
   @override
   _SplashPageState createState() => _SplashPageState();
@@ -15,7 +15,7 @@ class _SplashPageState extends State<SplashPage> {
     return EasySplashScreen(
       logo: Image.asset("assets/images/bis_logo.png"),
       //title: Text(
-      //  "BIG GAMES 2025",
+      //  "BIS BIG GAMES 2025",
       //  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       //),
       backgroundColor: Colors.white38,

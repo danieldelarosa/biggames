@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'sponsor_carousel.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 import 'navigation_helper.dart';
 
 class TableScreen extends StatefulWidget {
@@ -11,7 +10,7 @@ class TableScreen extends StatefulWidget {
 }
 
 class _TableScreenState extends State<TableScreen> {
-  final int _selectedIndex = 3; // Track the selected tab, default to "Table"
+  int _selectedIndex = 3; // Track the selected tab, default to "Table"
 
   // List of tabs
   final List<String> _tabs = [
@@ -21,6 +20,15 @@ class _TableScreenState extends State<TableScreen> {
     'Table',
     'Scenarios',
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    // Enable virtual display for WebView on macOS
+    //if (WebView.platform is WebKitWebViewPlatform) {
+    //  WebView.platform = WebKitWebViewPlatform();
+    //}
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +61,7 @@ class _TableScreenState extends State<TableScreen> {
                           onPressed: () => onItemTapped(context, index),
                           child: Text(
                             tab,
-                            style: GoogleFonts.montserrat(
+                            style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
@@ -64,92 +72,13 @@ class _TableScreenState extends State<TableScreen> {
                   }).toList(),
             ),
           ),
-          // Table of Schools and Points
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Points Table',
-                  style: GoogleFonts.montserrat(
-                    color: const Color(0xFF1A2141),
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                Table(
-                  border: TableBorder.all(color: Colors.black),
-                  children: [
-                    TableRow(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'School',
-                            style: GoogleFonts.montserrat(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'Points',
-                            style: GoogleFonts.montserrat(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    TableRow(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text('School A'),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text('100'),
-                        ),
-                      ],
-                    ),
-                    TableRow(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text('School B'),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text('90'),
-                        ),
-                      ],
-                    ),
-                    TableRow(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text('School C'),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text('80'),
-                        ),
-                      ],
-                    ),
-                    // Add more rows as needed
-                  ],
-                ),
-              ],
+          // WebView to embed the webpage
+          Expanded(
+            child: WebView(
+              initialUrl: 'https://peppy-cassata-14d9ce.netlify.app/',
+              javascriptMode: JavascriptMode.unrestricted,
             ),
           ),
-          // Spacer to push the footer to the bottom
-          const Spacer(),
-          // Carousel Footer
-          const SponsorCarousel(),
         ],
       ),
     );
